@@ -8,7 +8,7 @@ namespace UnitTestsGlobalBlueVatApi.Service.Austria
 {
     public class AustriaServiceHelperTests
     {
-        private Mock<IAustrianVATRateValidator> _vatRateValidator;
+        private Mock<IAustrianVatRateValidator> _vatRateValidator;
         private AustriaServiceHelper _austriaServiceHelper;
 
         private static readonly object[] _verifyPriceDetailsValidTestScenarios =
@@ -38,7 +38,7 @@ namespace UnitTestsGlobalBlueVatApi.Service.Austria
         [SetUp]
         public void Setup()
         {
-            _vatRateValidator = new Mock<IAustrianVATRateValidator>();
+            _vatRateValidator = new Mock<IAustrianVatRateValidator>();
             _austriaServiceHelper = new AustriaServiceHelper(_vatRateValidator.Object);
         }
 

@@ -30,7 +30,7 @@ namespace UnitTestsGlobalBlueVatApi.Service.Austria
             var mockRepository = new Mock<IRepository>();
             mockRepository.Setup(x => x.GetAustrianVATRates()).Returns(vatRateList);
 
-            var austrianVATValidator = new AustrianVATRateValidator(mockRepository.Object);
+            var austrianVATValidator = new AustrianVatRateValidator(mockRepository.Object);
 
             //Act
             var result = austrianVATValidator.IsValid(rateToCheck);
@@ -46,7 +46,7 @@ namespace UnitTestsGlobalBlueVatApi.Service.Austria
             var mockRepository = new Mock<IRepository>();
             mockRepository.Setup(x => x.GetAustrianVATRates()).Returns(vatRateList);
 
-            var austrianVATValidator = new AustrianVATRateValidator(mockRepository.Object);
+            var austrianVATValidator = new AustrianVatRateValidator(mockRepository.Object);
 
             //Act
             var result = austrianVATValidator.IsValid(rateToCheck);

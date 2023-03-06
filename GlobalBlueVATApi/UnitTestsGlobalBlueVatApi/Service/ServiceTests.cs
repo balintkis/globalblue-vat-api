@@ -10,7 +10,7 @@ namespace UnitTestsGlobalBlueVatApi.Service
     {
         private Mock<IAustriaServiceHelper> _austriaPriceDetailsService;
         private IService _service;
-        private string _resultJson = "Result JSON";
+        private readonly string _resultJson = "Result JSON";
 
         [SetUp]
         public void Setup()

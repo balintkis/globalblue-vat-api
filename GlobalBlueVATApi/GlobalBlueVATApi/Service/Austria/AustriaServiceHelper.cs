@@ -5,9 +5,9 @@ namespace GlobalBlueVATApi.Service.Austria
 {
     public class AustriaServiceHelper : IAustriaServiceHelper
     {
-        private readonly IAustrianVATRateValidator _vatRateValidator;
+        private readonly IAustrianVatRateValidator _vatRateValidator;
 
-        public AustriaServiceHelper(IAustrianVATRateValidator austrianVATRateValidator)
+        public AustriaServiceHelper(IAustrianVatRateValidator austrianVATRateValidator)
         {
             _vatRateValidator = austrianVATRateValidator;
         }

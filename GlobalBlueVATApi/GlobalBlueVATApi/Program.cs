@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<IService, Service>();
 builder.Services.AddSingleton<IAustriaServiceHelper, AustriaServiceHelper>();
 builder.Services.AddSingleton<IRepository, Repository>();
-builder.Services.AddSingleton<IAustrianVATRateValidator, AustrianVATRateValidator>();
+builder.Services.AddSingleton<IAustrianVatRateValidator, AustrianVatRateValidator>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

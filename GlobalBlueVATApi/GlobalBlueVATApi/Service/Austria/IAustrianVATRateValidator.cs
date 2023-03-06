@@ -1,6 +1,6 @@
 ﻿namespace GlobalBlueVATApi.Service.Austria
 {
-    public interface IAustrianVATRateValidator
+    public interface IAustrianVatRateValidator
     {
         bool IsValid(decimal rateToCheck);
     }
